@@ -1,0 +1,12 @@
+.venv/
+.python-version
+uv.lock
+work/
+cache/
+datasets/coco/val2017/
+wyniki_K2/
+out/
+__pycache__/
+.ipynb_checkpoints/
+*.zip
+.cursor

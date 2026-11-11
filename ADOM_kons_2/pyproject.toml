@@ -1,0 +1,40 @@
+[project]
+name = "adoim-mask-rcnn"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+  "torch",
+  "torchvision",
+  "jupyter",
+  "ipykernel",
+  "ipywidgets",
+  "pandas",
+  "matplotlib",
+  "opencv-python",
+  "tqdm",
+  "pycocotools",
+  "ninja",
+  "cython",
+  "setuptools<81",
+  "wheel",
+  "detectron2",
+  "cloudpickle",
+  "omegaconf",
+  "fvcore",
+  "iopath",
+  "termcolor",
+  "yacs",
+  "tabulate",
+  "pillow",
+  "packaging",
+  "tensorboard",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.extra-build-dependencies]
+detectron2 = ["torch"]
+
+[tool.uv.sources]
+detectron2 = { git = "https://github.com/facebookresearch/detectron2", rev = "247691a1c292654867deb35cabb27f18d75a1363" }
